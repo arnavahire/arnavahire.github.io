@@ -1,0 +1,1419 @@
+/***************************** Generic BODY and HTML styling *****************************/
+
+html {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+}
+
+body {
+   margin: 0px;
+   min-height: 100%;
+   min-width: 350px;   /*The width of our page body can not be less than 350 pixels. The rendering of page will not be good below this width*/
+}
+
+p{
+  font-family: 'Roboto Condensed', sans-serif; /*All paragraphs will have same font*/
+}
+
+/*************************** NAVIGATION BAR STYLING ************************************/
+
+.navbar-inverse{
+  background-color: #000000; 
+  height:70px;
+  opacity: 0.8;
+}
+
+.navbar-nav{
+    float:none;
+    display: inline-block; /*All the elements inside this will be in-line and would not be floating*/
+    vertical-align: top;  /*Aligns the top of the element with the topmost element in the line*/
+}
+
+.navbar-collapse{
+    text-align: center;  /*All the text inside this navbar will be center-aligned*/ 
+}
+
+.navbar-collapse.collapsing{  /*The properties of navbar during collapsing are given by this class. We want to keep our navbar blackish transparent*/
+  background-color: #000000;
+  opacity: 0.85;
+}
+
+.navbar-collapse.collapse.in{ /*The properties of navbar after getting collapsed are given by this class. We can check by doing a demo while inspecting the page source*/
+  background-color: #000000;
+  opacity: 0.85;
+}
+
+
+#links a{
+  color: #FFFFFF;
+}
+
+#links a:hover{
+  color: #444444;
+}
+
+/******************************** SECTION Background and background-color styling ***************************/
+
+#about{
+  
+  background-color: #CD5360;
+  background-size: cover;
+  padding-top: 50px;              /* Because some portion of navigation bar overlaps the top of 'section' region*/
+}
+
+#experience{
+
+  background-color: #B37D4E;
+  background-size: cover;
+  padding-top: 50px;
+}
+
+#projects{
+
+  background-color: #438496; 
+  background-size: cover;
+  padding-top: 50px;
+}
+
+#entertainment{
+ 
+  background-color: #CD5360;
+  background-size: cover;
+  padding-top: 50px;
+}
+
+#resume{
+
+  background-color: #B37D4E;
+  background-size: cover;
+  padding-top: 50px;
+}
+
+#contact{
+  background-color: #438496;
+  background-size: cover;
+  padding-top: 50px;          
+}
+
+.affix{
+  top:0;
+  width:100%;
+}
+
+/******************************************* ABOUT Section Generic Styling ***************************************/
+
+#about .row .col-sm-4 {
+  font-family:'Roboto Condensed', sans-serif; 
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+  font-size:3.0em;
+  padding: 50px;
+}
+
+#about .row .col-sm-8 {
+  font-family:'Roboto Condensed', sans-serif; 
+  text-align: center;
+  color: #C0C0C0;
+  font-size:1.25em;
+  padding: 50px;
+}
+
+/******************************************* EXPERIENCE Section Generic Styling ***************************************/
+
+#experience .row .col-sm-4 {
+  font-family:'Roboto Condensed', sans-serif; 
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+  font-size:3.0em;
+  padding: 50px;
+}
+
+#experience .row .col-sm-8 h2{
+  font-family:'Roboto Condensed', sans-serif; 
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #C0C0C0;
+  color: #C0C0C0;
+  font-size:2.5em;
+  padding-top: 50px;
+}
+
+#experience .row .col-sm-8 h3{
+  font-family:'Roboto Condensed', sans-serif; 
+  text-align: center;
+  color: #C0C0C0;
+  font-size:1.9em;
+}
+
+#experience .row .col-sm-8 h4{
+  font-family:'Roboto Condensed', sans-serif; 
+  text-align: center;
+  color: #696969;
+  font-size:1.5em;
+}
+
+#experience .row .col-sm-8 p{
+  font-family:'Roboto Condensed', sans-serif; 
+  text-align: center;
+  color: #A9A9A9;
+  font-size:1.25em;
+}
+
+/********************************************** PROJECTS Section Generic Styling ****************************************************/
+
+#projects .row .col-sm-4 {
+  font-family:'Roboto Condensed', sans-serif; 
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+  font-size:3.0em;
+  padding: 50px;
+}
+
+.row .col-sm-8 .row h2{                       /* Styling for the text 'Few Projects. At a glance' */
+  font-family:'Roboto Condensed', sans-serif; 
+  text-align: center;
+  padding-top:15px;
+  color: #C0C0C0;
+  font-size:1.8em;
+}
+
+/************* Modal Header Generic Styling - PROJECTS Section ****************/
+
+.modal-header{
+  background-color: #286DA8;
+}
+
+.modal-header h4{
+  font-family:'Roboto Condensed', sans-serif; 
+}
+
+ /******************** Modal Body Styling ***********************/
+
+.modal{
+  position: fixed;
+  top:150px;
+  left:0px;
+}
+
+.modal-content p{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:1.0em;
+  color:#000000;
+}
+
+
+/*********************************************** ENTERTAINMENT Section Generic Styling **********************************************/
+
+#entertainment .row .col-sm-4 {
+  font-family:'Roboto Condensed', sans-serif; 
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+  font-size:3.0em;
+  padding: 50px;
+}
+
+#entertainment .row .col-sm-8 h2{
+  font-family:'Roboto Condensed', sans-serif; 
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #C0C0C0;
+  color: #C0C0C0;
+  font-size:2.5em;
+  padding-top: 50px;
+}
+
+#entertainment .row .col-sm-8 h4{
+  font-family:'Roboto Condensed', sans-serif; 
+  text-align: center;
+  color: #696969;
+  font-size:1.5em;
+}
+
+#entertainment .row .col-sm-8 p{
+  font-family:'Roboto Condensed', sans-serif; 
+  text-align: center;
+  color: #A9A9A9;
+  font-size:1.25em;
+}
+
+/******************** Youtube Icon Styling - ENTERTAINMENT section *******************/
+
+  .fa {
+    font-size: 75px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 20px;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-youtube {
+    background: #CD5360;
+    color: white;
+    margin-bottom:30px; 
+    display: block;
+    margin:auto;
+  }
+
+/************************************************* RESUME Section Generic Styling ****************************************************/
+
+#resume .row .col-sm-4 {
+  font-family:'Roboto Condensed', sans-serif; 
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+  font-size:3.0em;
+  padding: 50px;
+}
+
+#resume .row .col-sm-8 h2{
+  font-family:'Roboto Condensed', sans-serif; 
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #C0C0C0;
+  color: #C0C0C0;
+  font-size:2.5em;
+  padding-top: 50px;
+}
+
+#resume .row .col-sm-8 p{
+  font-family:'Roboto Condensed', sans-serif; 
+  text-align: center;
+  color: #A9A9A9;
+  font-size:1.25em;
+}
+
+/* Download Button for Resume */
+
+.button-resume {
+  font-family:'Roboto Condensed', sans-serif; 
+  text-align: center;
+  background-color: #555555;
+  color: #C0C0C0;
+  font-size:2.0em;
+  border: 2px solid #A9A9A9;
+  border-radius: 8px;
+  margin:auto;          /*Required to center-align the button*/
+  display: block;
+  margin-bottom: 50px;  /*Some space needs to be left out at the bottom of the button to enhance visual appeal*/ 
+}
+
+.button-resume:hover {
+  color: white;
+  border: 2px solid white;
+}
+
+/************************************************* CONTACT Section Generic Styling ***************************************************/
+
+#contact .row .col-sm-4 {
+  font-family:'Roboto Condensed', sans-serif; 
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+  font-size:3.0em;
+  padding: 50px;
+}
+ 
+#contact .row .col-sm-8 h2{
+  font-family:'Roboto Condensed', sans-serif; 
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #C0C0C0;
+  color: #C0C0C0;
+  font-size:2.5em;
+  padding-top: 50px;
+}
+
+#contact .row .col-sm-8 h4{
+  font-family:'Roboto Condensed', sans-serif; 
+  text-align: center;
+  padding-top:15px;
+  color: #696969;
+  font-size:1.5em;
+}
+
+#contact .row .col-sm-8 p{
+  font-family:'Roboto Condensed', sans-serif; 
+  text-align: center;
+  color: #A9A9A9;
+  font-size:1.25em;
+}
+
+/*************************Social Media Icons CSS Styling************************/
+
+@font-face {
+    font-family: 'si';
+    src: url('..Images/socicon.eot');
+    src: url('../Images/socicon.eot?#iefix') format('embedded-opentype'),
+         url('../Images/socicon.woff') format('woff'),
+         url('../Images/socicon.ttf') format('truetype'),
+         url('../Images/socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(../Images/socicon.svg) format(svg);
+    }
+}
+
+.soc {
+    overflow:hidden;
+    margin:0; 
+    padding-top:5px;
+    padding-right:10px;
+    list-style:none;
+    text-align: center; /* To center-align the social media buttons */
+  }
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    margin:auto;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -o-transition:.1s;
+    -ms-transition:.1s;
+    -moz-transition:.1s;
+    -webkit-transition:.1s;
+    transition:.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 44px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    color: #F9F9F9;
+    background-color: #438496;
+}
+
+.soc a:hover {
+    z-index: 2;
+    background-color:#2f7082 !important;
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-twitter:before {
+    content:'\e040';
+}
+.soc-facebook:before {
+    content:'\e041';
+}
+.soc-linkedin:before {
+    content:'\e049';
+}
+.soc-youtube:before {
+    content:'\e051';
+}
+.soc-github:before {
+    content:'\e030';
+}
+
+
+/*************************************************** GENERIC STYLING ENDS ***********************************************************/
+
+
+/************************************************ RESOLUTION BASED STYLING STARTS ****************************************************/
+
+
+
+
+/********************************************************* LARGE DEVICES ************************************************************/
+
+@media (min-width: 1200px){
+
+  /* Properties for each item in the navigationBar */
+
+  .nav > li{
+    text-align: center;
+    margin:0px 45px 0px 45px;     /* This is the spacing between each element inside the navbar. Ex: distance between Home and About*/
+    font-family: 'Roboto Slab';
+    font-size: 0.95em;  
+  }
+
+  /* My picture  */
+
+  .jumbotron {
+    margin:0;
+    position: relative;
+    background: url('../Images/myPic.jpg') no-repeat;
+    background-size: cover;
+    height:750px;
+    opacity: 0.95;
+}
+
+  /* Caption (which is present on my picture) Styling */
+
+  .caption {
+    margin-left: 10px;
+    padding: 10px 0px 0px 20px; 
+    position: absolute;       
+  }
+
+  .caption h1{
+    color:#E7E7E7; 
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+    opacity: 0.8;
+    font-size: 5.8em;
+    background: none;
+    position :relative;
+    -webkit-animation: mymove 3s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 3s infinite; 
+  
+  }
+
+  .caption h4{
+    color:#E7E7E7;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.0em;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+  }
+
+  .caption p{
+    color:#696969;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style:italic;
+    font-size: 1.25em;
+    margin:30px;
+  }
+
+  /* The Quote */
+
+  .blockquote{
+    margin-top: 80px;
+  }
+
+  .blockquoteFooter{
+    font-size: 1.0em;
+    color:#000000;
+  }
+
+  /*********************** PROJECT SECTION STYLING ***************************/
+  .row .col-sm-8 .row {
+ 
+    margin-right: 16px;
+  }
+
+  /* Add padding BETWEEN each row (if you want) */
+  .row .col-sm-8 .row > .column {
+      padding: 16px;
+  }
+
+  /* Create four equal columns that floats next to each other */ 
+  /* Spacing between each .modalButton div is handled here*/
+  .column {
+      float:left;
+      width: 30%;
+      margin:0px 12px;
+  }
+
+  /* Content */
+  .content {
+      background-color: white;
+      padding: 10px;
+  }
+
+/************ Trigger button styling for Modal*********************/
+
+  /* Div that contains the project info button that triggers the modal*/
+  
+  .modalButton{
+    height:250px;
+    width:250px;
+    border:none;
+    border-radius: 5px;  /* To make the border of the modal button smooth*/
+    position: relative;  /* For making the position of the text within the button as absolute */
+  }
+
+  .modalButton:hover .overlay {
+    bottom: 0;
+    height: 100%;
+    border:5px solid transparent; /* Transparent border */
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .overlay {                    /* This section will only be visible after hovering, else invisible. This contains our project info */
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #C0C0C0;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+
+  .centerPara{
+    line-height: 125px;  /* Used to adjust height of the text with respect to the div it is present in */
+  }
+
+  h3{
+    font-family:'Roboto Condensed', sans-serif; 
+    text-align: center;
+    padding-top:15px;
+    color: #000000;
+    font-size:1.4em;
+  }
+
+  /* Button class for project images*/
+
+  .btn-block{
+      border:0px solid transparent; /* this was 1px by default */
+  }
+
+  .project1{
+      background: url('../Images/Android1.jpg') no-repeat center;
+      background-size: contain;
+  }
+
+  .project2{
+      background: url('../Images/Android2.jpg') no-repeat center;
+      background-size: contain;
+  }
+
+  .project3{
+      background: url('../Images/Android3.png') no-repeat center;
+      background-size: contain;
+  }
+
+  .project4{
+      background: url('../Images/Solr.png') no-repeat center;
+      background-size: contain;
+  }
+  
+  .project5{
+      background: url('../Images/BigQuery.png') no-repeat center;
+      background-size: contain;
+  }
+
+  .project6{
+      background: url('../Images/QueryProcessing.png') no-repeat center;
+      background-size: contain;
+  }
+
+  .project7{
+      background: url('../Images/DataCleansing.png') no-repeat center;
+      background-size: contain;
+  }
+
+  .project8{
+      background: url('../Images/NeuralNetwork.png') no-repeat center;
+      background-size: contain;
+  }
+
+  .project9{
+      background: url('../Images/LearningandPrediction.png') no-repeat center;
+      background-size: contain;
+  }
+
+  .project10{
+      background: url('../Images/HadoopLogo.png') no-repeat center;
+      background-size: contain;
+  }
+
+  .project11{
+      background: url('../Images/Spark.png') no-repeat center;
+      background-size: contain;
+  }
+
+  .project12{
+      background: url('../Images/Dashboard.png') no-repeat center;
+      background-size: contain;
+  }
+
+  .project13{
+      background: url('../Images/Classification.png') no-repeat center;
+      background-size: contain;
+  }
+
+  .project14{
+      background: url('../Images/VHDL.png') no-repeat center;
+      background-size: contain;
+  }
+
+  .project15{
+      background: url('../Images/QandA.png') no-repeat center;
+      background-size: contain;
+  }
+
+}
+
+
+
+/**************************************************** MEDIUM DEVICES ****************************************************************/
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+  /* Properties for each item in the navigationBar */
+
+  .nav > li{
+    text-align: center;
+    margin:0px 30px 0px 30px;     /* This is the spacing between each element inside the navbar. Ex: distance between Home and About*/
+    font-family: 'Roboto Slab';
+    font-size: 0.95em;  
+  }
+
+  /* My picture */
+
+  .jumbotron {
+    margin:0;
+    position: relative;
+    background: url('../Images/myPic.jpg') no-repeat;
+    background-size: cover;
+    height:750px;
+    opacity: 0.95;
+}
+
+  /* Caption (which is present on my picture) Styling */
+  
+  .caption {
+    margin-left: 10px;
+    padding: 10px 0px 0px 20px; 
+    position: absolute;       
+  }
+
+  .caption h1{
+    color:#E7E7E7;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+    opacity: 0.8;
+    font-size: 5.5em;
+    background: none;
+    position :relative;
+    -webkit-animation: mymove 3s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 3s infinite; 
+  }
+
+  .caption h4{
+    color:#E7E7E7;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.75em;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+  }
+
+  .caption p{
+    color:#696969;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style:italic;
+    font-size: 1.2em;
+    margin:20px;
+  }
+
+  /* The Quote */
+
+  .blockquote{
+    margin-top: 70px;
+  }
+
+  .blockquoteFooter{
+    font-size: 1.0em;
+    color:#000000;
+  }
+
+  /*********************** PROJECT SECTION STYLING ***************************/
+  .row .col-sm-8 .row {
+    margin-right: 16px;
+  }
+
+  /* Add padding BETWEEN each row (if you want) */
+  .row .col-sm-8 .row > .column {
+    padding: 16px;
+  }
+
+  /* Create four equal columns that floats next to each other */
+  /* Spacing between each .modalButton div is handled here*/
+  .column {
+    float:left;
+    width: 30%;
+    margin:0px 10px;
+  }
+
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+
+  /************ Trigger button styling for Modal*********************/
+
+  /* Div that contains the project info button that triggers the modal*/
+  
+ .modalButton{
+    height:250px;
+    width:250px;
+    border:none;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .modalButton:hover .overlay {
+    bottom: 0;
+    height: 100%;
+    border:5px solid transparent;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #C0C0C0;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+
+  .centerPara{
+    line-height: 125px;
+  }
+  
+  h3{
+    font-family:'Roboto Condensed', sans-serif; 
+    text-align: center;
+    padding-top:15px;
+    color: #000000;
+    font-size:1.3em;
+  }
+
+  /* Button class for project images*/
+
+  .btn-block{
+    border:0px solid transparent; /* this was 1px by default */
+  }
+
+  .project1{
+    background: url('../Images/Android1.jpg') no-repeat center;
+    background-size: contain;    /*This 'contains' property tries to fit the background(in this case our logo) in the given size*/
+  }
+
+  .project2{
+    background: url('../Images/Android2.jpg') no-repeat center;
+    background-size: contain;
+  }
+
+  .project3{
+    background: url('../Images/Android3.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project4{
+    background: url('../Images/Solr.png') no-repeat center;
+    background-size: contain;
+  }
+  
+  .project5{
+    background: url('../Images/BigQuery.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project6{
+    background: url('../Images/QueryProcessing.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project7{
+    background: url('../Images/DataCleansing.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project8{
+    background: url('../Images/NeuralNetwork.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project9{
+    background: url('../Images/LearningandPrediction.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project10{
+    background: url('../Images/HadoopLogo.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project11{
+    background: url('../Images/Spark.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project12{
+    background: url('../Images/Dashboard.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project13{
+    background: url('../Images/Classification.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project14{
+    background: url('../Images/VHDL.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project15{
+    background: url('../Images/QandA.png') no-repeat center;
+    background-size: contain;
+  }
+
+}
+
+
+
+/*********************************************************** SMALL DEVICES ***********************************************************/
+
+@media (min-width: 768px) and (max-width: 991px){
+
+  /* Properties for each item in the navigationBar */
+
+  .nav > li{
+    text-align: center;
+    margin:0px 15px 0px 15px;     /* This is the spacing between each element inside the navbar. Ex: distance between Home and About*/
+    font-family: 'Roboto Slab';
+    font-size: 0.95em;  
+  }
+
+/* My picture */
+  
+  .jumbotron {
+    margin:0;
+    position: relative;
+    background: url('../Images/myPic_992px.jpg') no-repeat;
+    background-size: cover;
+    height:650px;
+    opacity: 0.95;
+  }
+
+  /* Caption (which is present on my picture) Styling */
+  
+  .caption {
+    margin-left: 10px;
+    padding: 10px 0px 0px 20px; 
+    position: absolute;       
+  }
+
+  .caption h1{
+    color:#E7E7E7;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+    opacity: 0.8;
+    font-size: 4.5em;
+    background: none;
+    position :relative;
+    -webkit-animation: mymove 3s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 3s infinite; 
+  }
+
+  .caption h4{
+    color:#E7E7E7;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+    font-size: 1.6em;
+  }
+
+  .caption p{
+    color:#696969;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style:italic;
+    font-size: 1.15em;
+    margin:20px;
+  }
+
+  .blockquote{
+    margin-top: 50px;
+  }
+
+  .blockquoteFooter{
+    font-size: 1.0em;
+    color:#000000;
+  }
+
+    /*********************** PROJECT SECTION STYLING ***************************/
+  .row .col-sm-8 .row {
+    margin-right: 16px;
+  }
+
+  /* Add padding BETWEEN each row (if you want) */
+  .row .col-sm-8 .row > .column {
+      padding: 5px;
+  }
+
+  /* Create four equal columns that floats next to each other */
+  /* Spacing between each .modalButton div is handled here*/
+  .column {
+    float:left;
+    width: 30%;
+    margin:0px 8px;
+  }
+
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+
+  /************ Trigger button styling for Modal*********************/
+
+  /* Div that contains the project info button that triggers the modal*/
+  
+  .modalButton{
+    height:250px;
+    width:250px;
+    border:none;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .modalButton:hover .overlay {
+    bottom: 0;
+    height: 100%;
+    border:5px solid transparent;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #C0C0C0;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+
+  .centerPara{
+    line-height: 125px;
+  }
+
+  h3{
+    font-family:'Roboto Condensed', sans-serif; 
+    text-align: center;
+    padding-top:15px;
+    color: #000000;
+    font-size:1.15em;
+  }
+  
+  /* Button class for project images*/
+
+  .btn-block{
+    border:0px solid transparent; /* this was 1px by default */
+  }
+
+  .project1{
+    background: url('../Images/Android1.jpg') no-repeat center;
+    background-size: contain;    /*This 'contains' property tries to fit the background(in this case our logo) in the given size*/
+  }
+
+  .project2{
+    background: url('../Images/Android2.jpg') no-repeat center;
+    background-size: contain;
+  }
+
+  .project3{
+    background: url('../Images/Android3.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project4{
+    background: url('../Images/Solr.png') no-repeat center;
+    background-size: contain;
+  }
+  
+  .project5{
+    background: url('../Images/BigQuery.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project6{
+    background: url('../Images/QueryProcessing.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project7{
+    background: url('../Images/DataCleansing.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project8{
+    background: url('../Images/NeuralNetwork.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project9{
+    background: url('../Images/LearningandPrediction.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project10{
+    background: url('../Images/HadoopLogo.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project11{
+    background: url('../Images/Spark.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project12{
+    background: url('../Images/Dashboard.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project13{
+    background: url('../Images/Classification.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project14{
+    background: url('../Images/VHDL.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project15{
+    background: url('../Images/QandA.png') no-repeat center;
+    background-size: contain;
+  }
+
+}
+
+/***************************************************** EXTRA SMALL DEVICES ***********************************************************/
+
+@media (max-width: 767px){
+
+.navbar-inverse{             /*We reduce the height of navigation bar from 70 to 50px since now it contains only a button*/
+  background-color: #000000; 
+  height:50px;
+  opacity: 0.8;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+}
+
+ .nav > li{
+    font-family: 'Roboto Slab';
+    font-size: 0.95em;  
+    display: block;
+  }
+
+ .glyphicon{   /* Don't display glyphicons (small icons in the navbar) for smaller devices*/
+    display:none;
+ }
+
+ /* My picture */
+  
+  .jumbotron {
+    margin:0;
+    position: relative;
+    background: url('../Images/myPic_767px.jpg') no-repeat center center;
+    background-size: cover;
+    height:450px;
+    opacity: 0.95;
+  }
+
+  /* Caption (which is present on my picture) Styling */
+  
+  .caption {
+    margin-left: 10px;
+    padding: 10px 0px 0px 20px; 
+    position: absolute;       
+  }
+
+  .caption h1{
+    color:#E7E7E7;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+    opacity: 0.8;
+    font-size: 3.5em;
+    background: none;
+    position :relative;
+    -webkit-animation: mymove 3s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 3s infinite; 
+  }
+
+  .caption h4{
+    color:#E7E7E7;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+    font-size: 1.1em;
+  }
+
+  .caption p{
+    color:#696969;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style:italic;
+    font-size: 0.75em;
+    margin:20px;
+  }
+
+  .blockquote{
+    margin-top: 15px;
+  }
+
+  .blockquoteFooter{
+    font-size: 0.5em;
+    color:#000000;
+  }
+
+  /* Reducing 'padding-top' from 50px to 5px for all col-sm-8's h2 elements as now col-sm-4 and col-sm-8 are stacking one above other*/
+
+  #about .row .col-sm-8 {                         /*Styling for 'About' content*/
+    font-family:'Roboto Condensed', sans-serif; 
+    text-align: center;
+    color: #C0C0C0;
+    font-size:1.25em;
+    padding-top: 5px;
+  }
+
+  #experience .row .col-sm-8 h2{                  /*Styling for word 'Company'*/
+    font-family:'Roboto Condensed', sans-serif; 
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #C0C0C0;
+    color: #C0C0C0;
+    font-size:2.5em;
+    padding-top: 5px;
+  }
+
+  .row .col-sm-8 .row h2{                       /* Styling for the text 'Few Projects. At a glance' */
+    font-family:'Roboto Condensed', sans-serif; 
+    text-align: center;
+    padding-top:5px;
+    color: #C0C0C0;
+    font-size:1.8em;
+  }
+
+  #entertainment .row .col-sm-8 h2{              /*Styling for word 'Youtube'*/
+    font-family:'Roboto Condensed', sans-serif; 
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #C0C0C0;
+    color: #C0C0C0;
+    font-size:2.5em;
+    padding-top: 5px;
+  }
+
+  #resume .row .col-sm-8 h2{                      /*Styling for word 'Work'*/
+    font-family:'Roboto Condensed', sans-serif; 
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #C0C0C0;
+    color: #C0C0C0;
+    font-size:2.5em;
+    padding-top: 5px;
+  }
+
+  #contact .row .col-sm-8 h2{                   /*Styling for underlined 'Arnav Ahire'*/
+    font-family:'Roboto Condensed', sans-serif; 
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #C0C0C0;
+    color: #C0C0C0;
+    font-size:2.5em;
+    padding-top: 5px;
+  }
+
+
+    /*********************** PROJECT SECTION STYLING ***************************/
+
+
+  /* Add padding BETWEEN each row (if you want) */
+  .row .col-sm-8 .row > .column {
+    padding: 5px;
+  }
+
+  /* Create four equal columns that floats next to each other */
+  /* Spacing between each .modalButton div is handled here*/
+  .column {
+    width: 100%;    
+  }
+
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+    display: block;   /* To stack all elements in div one above other, for the div we set display=block and set its margin as auto*/
+    margin:auto;
+  }
+
+  /************ Trigger button styling for Modal*********************/
+
+  /* Div that contains the project info button that triggers the modal*/
+  
+  .modalButton{
+    height:250px;
+    width:250px;
+    border:none;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .modalButton:hover .overlay {
+    bottom: 0;
+    height: 100%;
+    border:5px solid transparent;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #C0C0C0;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+
+  .centerPara{
+    line-height: 125px;
+  }
+
+  h3{
+    font-family:'Roboto Condensed', sans-serif; 
+    text-align: center;
+    padding-top:15px;
+    color: #000000;
+    font-size:1.4em;
+  }
+  
+  /* Button class for project images*/
+
+  .btn-block{
+    border:0px solid transparent; /* this was 1px by default */
+  }
+
+  .project1{
+    background: url('../Images/Android1.jpg') no-repeat center;
+    background-size: contain;    /*This 'contains' property tries to fit the background(in this case our logo) in the given size*/
+  }
+
+  .project2{
+    background: url('../Images/Android2.jpg') no-repeat center;
+    background-size: contain;
+  }
+
+  .project3{
+    background: url('../Images/Android3.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project4{
+    background: url('../Images/Solr.png') no-repeat center;
+    background-size: contain;
+  }
+  
+  .project5{
+    background: url('../Images/BigQuery.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project6{
+    background: url('../Images/QueryProcessing.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project7{
+    background: url('../Images/DataCleansing.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project8{
+    background: url('../Images/NeuralNetwork.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project9{
+    background: url('../Images/LearningandPrediction.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project10{
+    background: url('../Images/HadoopLogo.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project11{
+    background: url('../Images/Spark.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project12{
+    background: url('../Images/Dashboard.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project13{
+    background: url('../Images/Classification.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project14{
+    background: url('../Images/VHDL.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .project15{
+    background: url('../Images/QandA.png') no-repeat center;
+    background-size: contain;
+  }
+
+}
+
+/*************************************************** RESOLUTION BASED STYLING ENDS ***************************************************/
+
